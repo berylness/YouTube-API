@@ -1,0 +1,44 @@
+body {
+font-family: 'Francois One', sans-serif;
+}
+
+form {
+	margin-top: 2em;
+}
+
+#query {
+	display: block;
+	border: 1px solid #434343;
+	background: none;
+	padding: .3em;
+	font-size: 1.5em;
+	width: 30%;
+	margin-left: 400px;
+}
+
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+#search-button {
+	width: 10em;
+	height: 3em;
+	background-color: #dd1d1d;
+	color: #fff;
+	font-family: "Fira Sans", sans-serif;
+	font-size: .75em;
+	border-radius: 5px;
+	border: 1px solid #000;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+#search-results {
+	margin-left: 400px;
+	margin-top: 50px;
+}
