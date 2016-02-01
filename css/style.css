@@ -6,6 +6,7 @@ form {
 	margin-top: 2em;
 }
 
+/* Styling for the Search Field*/ 
 #query {
 	display: block;
 	border: 1px solid #434343;
@@ -16,29 +17,36 @@ form {
 	margin-left: 400px;
 }
 
-
+/* Styling for the Page's Headline*/ 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
 	text-align: center;
 	margin-bottom: 0.5em;
 }
 
+/* Styling for the Red "Submit" Button*/ 
 #search-button {
 	width: 10em;
 	height: 3em;
 	background-color: #dd1d1d;
 	color: #fff;
 	font-family: "Fira Sans", sans-serif;
-	font-size: .75em;
-	border-radius: 5px;
+	font-size: 1.0em;
+	border-radius: 2px;
 	border: 1px solid #000;
 	display: block;
 	text-align: center;
 	margin: 0 auto;
 }
 
-
+/* Styling for the Area where the Search Results are Returned*/ 
 #search-results {
 	margin-left: 400px;
 	margin-top: 50px;
+}
+
+/* Styling for the Individual Video Titles*/ 
+h3 {
+	margin-left: 0px;
+	margin-top: 40px;
 }
