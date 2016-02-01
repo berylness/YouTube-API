@@ -1,15 +1,15 @@
 
 $(document).ready(function() {
 
-//* Runs the getRequest function when "submit" button is clicked *// 
+//* Runs the getRequest Function When the "Submit" Button is Clicked *// 
   $('#search-term').submit(function(event){
       event.preventDefault();
       var searchTerm = $('#query').val(); 
       getRequest(searchTerm);
-  });
+      });
   
 
-//* Function to contact the YouTube API with the search term entered *// 
+//* Function to contact the YouTube API with the Search Keyword Entered *// 
 function getRequest(searchTerm){
   var params = {
     part: 'snippet',
@@ -23,11 +23,11 @@ function getRequest(searchTerm){
   }); 
 }
 
-//* Function to display the thumbnails in the "search-results" div *//     
+//* Function to Display the Thumbnails in the "Search-Results" div *//     
 function showResults(result) {    
   for (var i = 0; i < result.length; i++) {
-
-    $('#search-results').append('<a href="https://www.youtube.com/watch?v=' + result[i].id.videoId.title + '"><img src="' + result[i].snippet.thumbnails.medium.url + '"></a><br><br><br>');
+    console.log(result[i]);
+    $('#search-results').append('<a href="https://www.youtube.com/watch?v=' + result[i].id.videoId + '"> <h3>' + result[i].snippet.title + '</h3> <img src="' + result[i].snippet.thumbnails.medium.url + '"></a><br><br><br>');
     }   
  };
 
