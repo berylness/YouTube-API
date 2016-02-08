@@ -1,3 +1,4 @@
+//* YouTube API Script *//
 
 $(document).ready(function() {
 
@@ -25,8 +26,9 @@ function getRequest(searchTerm){
 
 //* Function to Display the Thumbnails in the "Search-Results" div *//     
 function showResults(result) {    
+    //* Clears Any Previous Search Results Rather Than Appending *//
+    $('#search-results').html('');
   for (var i = 0; i < result.length; i++) {
-    console.log(result[i]);
     $('#search-results').append('<a href="https://www.youtube.com/watch?v=' + result[i].id.videoId + '"> <h3>' + result[i].snippet.title + '</h3> <img src="' + result[i].snippet.thumbnails.medium.url + '"></a><br><br><br>');
     }   
  };
